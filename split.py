@@ -24,8 +24,6 @@ def main():
                         default="dwarf.opus", required=True)
     parser.add_argument('--timestamps_file',
                         help='timestamps file', default="dwarf_text.txt", required=True)
-    parser.add_argument('--start_time', help='start time', default="")
-    parser.add_argument('--end_time', help='end time', default="")
     args = parser.parse_args()
 
     with open(args.timestamps_file) as f:
